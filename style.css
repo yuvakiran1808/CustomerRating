@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(185, 181, 181) !important;
+    font-family: 'Roboto' !important;
+}
+.big-container .star-icon input{
+        display: none;
+}
+
+
+.big-container{
+    box-sizing: border-box;
+    width: 40%;
+    margin: 0 auto;
+}
+.star-icon{
+   margin-right: 11.5rem;
+}
+.star-icon .star-label{
+    font-size: 40px;
+    color: white;
+    transition: all 0.2s ease;
+    float: right;
+    margin-right: 1rem;
+}
+
+input[type ="radio"]:checked ~ label{
+    color: #01818c;
+}
+
+
+.big-container form{
+    display: none;
+}
+input:checked ~ form{
+   display: block;
+}
+
+
+
+
+
+.md-chip {
+  display: inline-block;
+  background: #e0e0e0;
+  padding: 0rem 2rem 0rem 1.5rem;
+  border-radius: 20px;
+  font-size: 13px;
+  text-align: center;
+}
+.md-chip-hover:hover {
+  background: #ccc;
+}
+
+.md-chip-clickable {
+ cursor: pointer;
+}
+
+.md-chip, .md-chip-icon {
+  height: 32px;
+  line-height: 32px;
+}
+
+.md-chip-icon {
+  display: block;
+  float: left;
+  background: #009587;
+  width: 32px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  margin: 0 8px 0 -12px;
+}
+
+
+
+.md-chips .md-chip {
+  margin: 3px 5px 3px 0;
+} 
+
+input[type="checkbox"] {
+  display: none;
+}
+
+
+input[type="checkbox"]:checked + label {
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  background-color: #01818c;
+}
+
+
+.form-con {
+    width: 100%;
+    border: 2px solid rgb(185, 181, 181);
+   margin-left: 4rem;
+}
+.header{
+    margin-top: 3rem;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 1rem 0rem 1rem 0rem;
+    
+}
+.top-para{
+    margin-left: 4.2rem;
+    padding-bottom: .5rem;
+}
+.top-header{
+    margin-left: 4rem;
+    padding: 2rem 0rem .5rem 0rem;
+    font-size: 32px;
+}
+.textarea{
+    padding: 1rem 0rem 0rem 0rem;
+}
+
+@media screen and (max-width: 768px ){
+    .star-icon{
+       width: 90%;
+      height: 50%;
+    }
+    .big-container{
+        box-sizing: border-box;
+        width: 100%;
+      
+    }
+    .form-con {
+        width: 100%;
+        border: 2px solid rgb(185, 181, 181);
+    }
+    .top-header{
+        font-size: 32px;
+    }
+}
