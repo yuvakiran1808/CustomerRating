@@ -18,8 +18,10 @@ body{
     width: 40%;
     margin: 0 auto;
 }
+
 .star-icon{
-   margin-right: 11.5rem;
+  width: 70%;
+  
 }
 .star-icon .star-label{
     font-size: 40px;
@@ -34,14 +36,16 @@ input[type ="radio"]:checked ~ label{
 }
 
 
-.big-container form{
+.big-container section{
     display: none;
 }
-input:checked ~ form{
+input:checked ~ section{
    display: block;
 }
 
-
+.display{
+      display: none;
+}
 
 
 
